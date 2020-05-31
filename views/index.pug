@@ -1,8 +1,11 @@
 extends layout
 
 block content 
+  div.container
+    each message in messages
+      h4 Author: #{message.user}
+      p #{message.text}
+      hr
 
-  each message in messages
-    p #{message.text}
-
+    a(href="/new") Add
 
