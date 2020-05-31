@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+
+    div.container
+        form(method="POST" action="/new")
+            div.form-group
+                label(for="author")
+                input#author(type="text" name="author")
+            
+            div.form-group
+                label(for="messageText")
+                input#messageText(type="text" name="messageText")
+
+            div.form-group
+                input(type="submit")
