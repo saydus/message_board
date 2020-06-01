@@ -1,11 +1,5 @@
 extends layout
 
-block content 
-  div.container
-    each message in messages
-      h4 Author: #{message.user}
-      p #{message.text}
-      hr
-
-    a(href="/new") Add
-
+block content
+  h1= title
+  p Welcome to #{title}
